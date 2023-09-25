@@ -6,10 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: kdahal-ventera/custom-action@main
-      - name: Tagger - Move semantic tags!
-        # You may pin to the exact commit or the version.
-        # uses: fischerscode/tagger@5ca3fa63ce3003fb7183cae547644b29f3b632be
-        uses: fischerscode/tagger@v0.2.0
-        with:
-          # The prefix of the semantic tags.
-                   prefix: v 
+      - name: Release-Notes-Preview
+  # You may pin to the exact commit or the version.
+  # uses: snyk/release-notes-preview@77b57680e453abd052d6e029e84037b644251ee8
+        uses: snyk/release-notes-preview@v1.6.1
