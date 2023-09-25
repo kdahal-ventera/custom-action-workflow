@@ -10,3 +10,10 @@ jobs:
   # You may pin to the exact commit or the version.
   # uses: snyk/release-notes-preview@77b57680e453abd052d6e029e84037b644251ee8
         uses: snyk/release-notes-preview@v1.6.1
+      - name: setup Github Token
+        # You may pin to the exact commit or the version.
+        # uses: KaceyGambill/setup-gh-token@6900389f5fe3ce265863594a22915f9baf4ad83b
+        uses: KaceyGambill/setup-gh-token@v2
+        with:
+          # base64 blob
+          GH_APP_TOKEN:  ${{secrets.GH_APP_TOKEN}}
